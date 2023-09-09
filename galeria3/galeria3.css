@@ -1,0 +1,129 @@
+
+body{
+  
+    display: flex;
+    justify-content: center;
+    background-color: rgb(61, 58, 58) ;
+}
+
+.navi{
+    z-index: 999;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  position: absolute;
+  border-bottom: 2px solid #750021;
+}
+
+a{
+  text-decoration: none;
+  color: #ECECCE;
+}
+
+a:hover{
+  color: white;
+}
+
+.icon img{
+  position: absolute;
+  margin: -11rem;
+}
+
+.title{
+  position: absolute;
+  left: 85px;
+  top: 1rem;
+  font-size: 25px;
+  color: #ECECCE;
+  margin: 1rem 1rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+.list ol{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 8.2rem;
+  top: 2.5%;
+  list-style: none;
+}
+
+li{
+  color:#750021;;
+  margin: 1rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+
+
+
+@media screen and (max-width: 684px) {
+  .list ol{
+      display: flex;
+      flex-direction: column;
+      
+  }
+  @media screen and (max-width: 684px) {
+  .list li{
+      margin: 0rem;
+      font-size: 16px;
+      margin-bottom: -.1rem;
+  }
+  }
+}
+
+#myCarousel{
+  width: 100%;
+height: auto;
+  margin-top: 12rem;
+  display: flex;
+  justify-content: center;
+   border: 24px solid #ECECCE;
+   box-shadow:0px 0px 1000px 50px #ECECCE;
+   border-radius: 40px;
+   
+}
+
+@media screen and (max-width: 768px){
+  #myCarousel{
+margin-top: 11rem;
+border: 20px solid #ECECCE;
+  }
+}
+
+/*@media screen and (max-width: 414px){
+  #myCarousel{
+    margin-top: -20rem;
+    margin-bottom: 2rem;
+    height: 620px;
+  };
+}*/
+
+.carousel-inner{
+    display: flex;
+   width: 100%;
+   height: auto;
+}
+
+@media screen and (max-width: 414px){
+  .carousel-inner{
+   align-items: center; 
+   }
+}
+
+@media screen and (min-width: 844px){
+  .carousel-inner .item img{
+    height: 100vh;
+    width: auto;
+  }
+}
+@media screen and (min-width: 844px){
+  .carousel-inner{
+    height: 100vh;
+    width: auto;
+  }
+}
+
+
